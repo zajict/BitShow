@@ -1,51 +1,20 @@
-* {
-  box-sizing: border-box;
-  margin: 0; }
-
-body {
-  margin: 0 auto; }
-
 header {
-  min-width: 100%;
-  background: #343a40;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-  header .header-title {
-    color: white;
-    font-weight: bolder; }
-  header .input-movie {
-    margin: 13px;
-    border-radius: 10px;
-    border: solid 1.5px #D3D3D3;
-    -webkit-transition: 1s;
-    /* Safari */
-    transition: 1s; }
-  header input:hover {
-    box-shadow: 0 0 3pt 0.5pt #D3D3D3; }
-  header .input-movie:focus {
-    box-shadow: 0 0 3pt 2pt #bcbbbb;
-    outline-width: 0px; }
+  width: 100%; }
+  header #navbar {
+    display: flex;
+    justify-content: center; }
+  header #home-page-button {
+    padding-left: 10%; }
+  header #navbar-form {
+    padding-right: 10%; }
 
-.movie-catalog-box {
-  width: 70%;
-  margin: 0 auto; }
-  .movie-catalog-box #popular-show {
-    text-align: center;
-    padding-top: 40px;
-    padding-bottom: 20px; }
-  .movie-catalog-box #movie-cards {
-    width: 100%;
-    margin: 20px; }
+main {
+  width: 70%; }
+  main #card {
+    width: 30%;
+    height: auto; }
 
-.footer {
-  margin-top: 30px;
-  background: #343a40;
-  color: white;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center; }
+footer {
+  width: 100%; }
 
 /*# sourceMappingURL=main.css.map */

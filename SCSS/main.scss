@@ -1,71 +1,27 @@
-$background: #343a40;
-$color-text: white;
-
-*{
-    box-sizing: border-box;
-    margin: 0;
-}
-
-body {
-    margin: 0 auto;
-}
-
-//header
 header {
-    min-width: 100%;
-    background: $background;
+    width: 100% ;
+
+   #navbar {
     display: flex;
-    align-items: center;
     justify-content: center;
-
-    .header-title {
-        color: $color-text;
-        font-weight: bolder;
-    }
-
-    .input-movie {
-        margin: 13px;
-        border-radius: 10px;
-        border: solid 1.5px #D3D3D3;
-        -webkit-transition: 1s; /* Safari */
-        transition: 1s;
-    }
-
-    input:hover{
-        box-shadow: 0 0 3pt 0.5pt #D3D3D3;
-    }
-
-    .input-movie:focus {
-        box-shadow: 0 0 3pt 2pt #bcbbbb;
-        outline-width: 0px;
-    }
+   }
+   #home-page-button {
+    padding-left: 10%;
+   }
+   #navbar-form {
+    padding-right: 10%;
+   }
 }
 
-
-//main container
-.movie-catalog-box {
+main {
     width: 70%;
-    margin:0 auto;    
 
-    #popular-show {
-    text-align: center;
-    padding-top: 40px;
-    padding-bottom: 20px;
-    }
-    #movie-cards {
-        width: 100%;
-        margin: 20px;
-
+    #card {
+        width: 30%;
+        height: auto;
     }
 }
 
-.footer {
-    margin-top: 30px;
-    background: $background;
-    color: $color-text;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+footer {
+    width: 100%;
 }
