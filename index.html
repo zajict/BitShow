@@ -4,41 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie Show</title>
-    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/174/174294.png?w=740&t=st=1677001322~exp=1677001922~hmac=807cddc49420669f87236181fc0ffed0a8462b119664a973eaeb9ac5b04574a3">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="./CSS/main.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>BIT Show</title>
 </head>
 <body>
-    <header class="header container-fluid">
-        <nav class="navbar navbar-expand-lg navbar justify-content-center" style="background-color: #343a40;" id="navbar">
-            <div class="container-fluid">
-                <a class="navbar-brand" style="color: #FFFFFF" id="home-page-button">BIT Show</a>
-                <form class="d-flex" role="search" id="navbar-form">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="search-input">
-                    <div id="dropdown-list"></div>
-                </form>
-            </div>
+    <div class="container-fluid">
+        <nav class="navbar justify-content-center" style="background-color: #343a40;">
+            <div class="container position-relative">
+                <a class="navbar-brand" style="color: #FFFFFF" id="home-button">BIT Show</a>
+                <div class="search-wrapper">
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="search-input">
+                    </form>
+                    <div id="search-dropdown"></div>
+                </div>
+            </div> 
         </nav>
-    </header>
-
-    <main id="movies-cards-container" class="main text-center container-fluid">
-        <div id="card"></div>
-    </main>
-
-    <footer class="container-fluid">
-        <div class="text-center p-3 footer" style="background-color: #343a40;">
-            <small class="text-white">Copyright &copy; Tijana Zajić 2023</small>
-        </div>
-    </footer>
-
-
-
-
+        <div class="main text-center" id="main-content"></div>     
+        <footer>
+            <div class="text-center p-3 footer" style="background-color: #343a40;">
+                <small class="text-white">Copyright &copy; Tijana Zajić 2023</small>
+            </div>
+        </footer>
+    </div>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    <script src="./JS/data.js"></script>
-    <script src="./JS/ui.js"></script>
-    <script src="./JS/app.js"></script>
+    <script src="./js/data.js"></script>
+    <script src="./js/ui.js"></script>
+    <script src="./js/app.js"></script>
 </body>
 </html>
